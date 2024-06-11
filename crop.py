@@ -10,8 +10,8 @@ from PIL import Image
 # load an image and save a thumbnail version
 def save_thumbnail(inpath, outpath):
     # load the image
-    max_width = 150  # Define your desired thumbnail width
-    max_height = 150  # Define your desired thumbnail height
+    max_width = 200  # Define your desired thumbnail width
+    max_height = 200  # Define your desired thumbnail height
     with Image.open(inpath) as image:
         # create a thumbnail image
         image.thumbnail((max_width, max_height), Image.Resampling.LANCZOS)
